@@ -1,0 +1,77 @@
+name: riderhub
+description: A new Delivery Service project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.3
+
+  shared_preferences: ^2.0.6
+  http: ^0.13.3
+  flutter_svg: ^0.22.0
+  cached_network_image: ^3.0.0
+  pull_to_refresh: ^2.0.0
+#  auto_size_text: ^3.0.0-nullsafety.0
+
+  charts_flutter: ^0.10.0
+  google_maps_flutter: ^2.0.6
+#  location: ^4.3.0
+  geolocator: ^7.2.0+1
+#  bitmap: ^0.1.2
+  cached_network_marker: ^0.1.1
+
+  circular_countdown_timer: ^0.2.0
+  permission_handler: ^8.1.2
+
+  socket_io_client: ^1.0.1
+  flutter_simple_dependency_injection: ^1.0.1
+#  web_socket_channel: ^2.1.0
+
+  intl: ^0.17.0
+  flutter_localizations:
+    sdk: flutter
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/roboto_light.ttf
+          weight: 200
+        - asset: assets/fonts/roboto_light_italic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/roboto_medium.ttf
+          weight: 400
+        - asset: assets/fonts/roboto_medium_italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/roboto_bold.ttf
+          weight: 600
+        - asset: assets/fonts/roboto_bold_italic.ttf
+          weight: 600
+          style: italic
+
+flutter_intl:
+  main_locale: en_US
+  enabled: true
